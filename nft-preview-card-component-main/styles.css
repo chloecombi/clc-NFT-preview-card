@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: hsl(215, 51%, 16%);
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: 520px;
+    position: relative;
+    box-shadow: 5px 40px 50px hsl(217, 71%, 7%);
+}
+.nft-img{
+    position: relative;
+    background-image: url(/images/image-equilibrium.jpg);
+    height: 285px;
+    background-repeat: none ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 300px;
+    
+}
+.nft-after-img{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 285px;
+    width: 300px;
+    background-color:hsla(178, 100%, 50%, 0.61) ;
+    border-radius: 10px;
+    opacity: 0;
+    
+}
+.nft-after-img:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity ease-out 250ms;
+
+}
+
+.maintxt {
+    margin: 20px 0;
+}
+#item {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+#item:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+    transition: ease-out 250ms;
+}
+#item_description {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+.subtxt {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    left: -24px;
+}
+.price p {
+    color: hsl(178, 100%, 50%);
+    margin-left: 10px;
+}
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    left: 24px;
+}
+.time p {
+    color: hsl(215, 51%, 70%);
+    margin-left: 10px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+    margin-bottom: 20px;
+}
+.creator {
+    display: flex;
+    align-items: center;
+}
+.creator_img {
+   background-image: url(/images/image-avatar.png);
+   background-repeat: none ;
+   background-size: contain;
+   background-position: center;
+   margin-right: 20px;
+   width:30px;
+   height:30px;
+   border-radius: 50%;
+   border-color: 1px rgba(255, 255, 255, 0.37);
+   border-style: solid;
+   border-width: 1px;
+}
+.creator_txt p {
+    color: hsl(215, 51%, 70%);
+}
+#name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+    transition: ease-out 250ms;
+}
